@@ -4,6 +4,13 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+ul,ol{
+    list-style: none;
+    font-size: 11px;
+}
+li{
+    padding-bottom: 8px;
+}
 a{
     color: white;
     text-decoration: none;
@@ -60,14 +67,11 @@ header{
     max-width: 450px;
 }
 /* col */
-.border{
-    border: dashed 1px;
-}
 .col-66{
     width: calc(2*100% / 3);
 }
 .col-33{
-    width: calc(100% / 3);
+    width: calc(100% / 2);
 }
 .col-100{
     width: 100%;
@@ -77,22 +81,44 @@ header{
     width: calc(100% / 6);
 }
 /* color */
+.bg-grey{
+    background-color: lightgray;
+}
 .white{
     color: white;
 }
 .black{
     color: black;
 }
+.bg-black{
+    background-color: #23272A;
+}
+.lightblue{
+    color: #8EA1E1;
+}
+.bg-lightblue{
+    background-color: #8EA1E1;
+}
 /* butttons */
 button{
     border-radius: 20px;
     border: 0;
     background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+button:hover{
+    color: #255EE9;
 }
 .login-button{
     width: 70px;
     height: 30px;
     font-size: 10px;
+}
+.registration-button{
+    width: 70px;
+    height: 30px;
+    font-size: 10px;
+    
 }
 .download-b{
     width: 150px;
@@ -102,7 +128,6 @@ button{
     margin-top: 15px;
     width: 150px;
     height: 40px;
-    background-color: #8EA1E1;
     vertical-align: middle;
 }
 .open-b{
@@ -148,8 +173,15 @@ button{
     text-align: start;
 }
 /* footer */
-#footer .flex{
-    justify-content: center;
-    background-color: #23272A;
-    height: 50px
+.line-footer{
+    border-top: 2px solid #8EA1E1;
+}
+.ita-image{
+    height: 16px;
+    width: 25;
+}
+/* bonus backgroung */
+.wave-background{
+    background-image: url(../img/wave.svg);
+    background-size: cover;
 }

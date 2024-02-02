@@ -11,9 +11,20 @@ h1{
     font-size: 35px;
 }
 p{
+    margin-top: 15px;
     font-size: 15px;
+    padding: 0;
+}
+.pad{
+    padding-bottom: 100px;
+}
+.title{
+    margin-top: 30px;
 }
 /* header */
+header{
+    background-color: #255EE9;
+}
 .header-section{
     padding-top: 15px;
 }
@@ -24,6 +35,7 @@ p{
     background-image: url(../img/jumbo.png);
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 .nav-bar{
     width: 100%;
@@ -34,8 +46,8 @@ p{
 }
 /* container */
 .container .flex{
-    padding: 30px;
-    width: 1000px;
+    padding: 30px;  
+    width: 1000px; 
 }
 .small-container .flex{
     padding-top: 15px;
@@ -48,13 +60,12 @@ p{
 }
 .col-66{
     width: calc(2*100% / 3);
-    border: dashed 1px;
-    height: 100px;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .col-33{
     width: calc(100% / 3);
-    height: 100px;
-    border: dashed 1px;
 }
 .col-100{
     width: 1000px;
@@ -67,6 +78,7 @@ p{
     outline: dashed 1px black;
     border: dashed 1px white;
 }
+/* color */
 .white{
     color: white;
 }
@@ -108,11 +120,17 @@ button{
 .justify-center{
     justify-content: center;
 }
+.justify-end{
+    justify-content: end;
+}
 .align-items{
     align-items: center;
 }
 .row{
     flex-direction: row;
+}
+.reversed-row{
+    flex-direction: row-reverse;
 }
 .column{
     flex-direction: column;
@@ -120,9 +138,20 @@ button{
 .text-align-center{
     text-align: center;
 }
+.text-align-start{
+    text-align: start;
+}
 /* footer */
 #footer .flex{
     justify-content: center;
     background-color: #23272A;
     height: 50px
+}
+/* img */
+.img-second-section{
+    background-image: url(../img/item1.svg);
+}
+.img-third-section{
+    background-image: url(../img/item2.svg);
+    height: 250px;
 }

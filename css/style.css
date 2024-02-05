@@ -183,5 +183,13 @@ button:hover{
 /* bonus backgroung */
 .wave-background{
     background-image: url(../img/wave.svg);
-    background-size: cover;
+    background-size: 100%;
+    fill: currentColor;
+}
+svg{
+    fill: lightgray;
+    margin: -5px;
+}
+.reversed-svg{
+    transform: scale(-1);
 }
